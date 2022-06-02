@@ -2,13 +2,10 @@
 Simple Instagram like bot. 
 works by manipulating the DOM
 
-// this program works by visiting instagram
-// searching a hashtag of your choice
-// and clicking on the first 'most recent' photo
+ in order for this program to work, you need to visit instagram.
+ search a hashtag of your choice, and click on the first 'most recent' photo.
 
-// use dev tools to inspect the pulled up photo
-// paste the code into the console
-// run it
+ use dev tools to inspect the pulled up photo. paste the code into the console. run it.
 
 // if the pulled up photo has a heart, it will click it
 // after, it will look for the arrow and click it
