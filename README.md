@@ -1,5 +1,7 @@
 # Instagram-Like-Bot
 Simple Instagram like bot. 
+works by manipulating the DOM
+
 // this program works by visiting instagram
 // searching a hashtag of your choice
 // and clicking on the first 'most recent' photo
