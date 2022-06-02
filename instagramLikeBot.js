@@ -19,16 +19,3 @@ setInterval(() => {
     nextButton.parentElement.parentNode.click();
 }, 15000);
 
-let password = 'catdog';
-if (password.length >=6) {
-    if (password.indexOf (' ') !== -1) {
-        console.log('Password cannot include spaces.');
-    }
-    else {
-        console.log('valid password!'); // valid password
-    }
-}
-else {
-    console.log('Password is too short.');
-}
-
