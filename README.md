@@ -1,4 +1,4 @@
-# Instagram-Like-Bot
+# Instagram-Like-Automation
 Simple Instagram 'like' bot. 
 works by manipulating the DOM
 
