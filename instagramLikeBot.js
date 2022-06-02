@@ -8,7 +8,7 @@
 
 let likes = 0;
 
-setInterval(() => {
+let myInterval = setInterval(() => {
     const likeButton = document.querySelector('svg[aria-label ="Like"]');
     const nextButton = document.querySelector('svg[aria-label="Next"]');
     if (likeButton) {
@@ -16,6 +16,7 @@ setInterval(() => {
         likes++;
     }
         nextButton.parentElement.parentNode.click();
-}, 15000);
+}, 20000);
+
 
 
