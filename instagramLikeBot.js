@@ -9,11 +9,11 @@
 let likes = 0;
 setInterval(() => {
     const likeButton = document.querySelector('svg[aria-label="like"[width ="24"]');
-    const nextPostButton = document.querySelector('svg [aria-label="Next"]');
+    const nextButton = document.querySelector('svg [aria-label="Next"]');
     if (likeButton) {
         likeButton.parentNode.parentElement.click()
         likes++;
         console.log(`You've liked ${likes} post(s)`);
     }
-    nextPostButton.parentElement.parentElement.click();
+    nextButton.parentElement.parentElement.click();
 }, 20000);
