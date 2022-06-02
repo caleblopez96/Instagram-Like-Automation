@@ -14,8 +14,8 @@ setInterval(() => {
     if (likeButton) {
         likeButton.parentNode.parentElement.click()
         likes++;
-        console.log(`You've liked ${likes} post(s)`);
     }
-    nextButton.parentElement.parentNode.click();
+        nextButton.parentElement.parentNode.click();
 }, 15000);
+
 
