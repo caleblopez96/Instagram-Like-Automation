@@ -7,13 +7,28 @@
 
 
 let likes = 0;
+
 setInterval(() => {
-    const likeButton = document.querySelector('svg[aria-label="like"[width ="24"]');
-    const nextButton = document.querySelector('svg [aria-label="Next"]');
+    const likeButton = document.querySelector('svg[aria-label ="Like"]');
+    const nextButton = document.querySelector('svg[aria-label="Next"]');
     if (likeButton) {
         likeButton.parentNode.parentElement.click()
         likes++;
         console.log(`You've liked ${likes} post(s)`);
     }
-    nextButton.parentElement.parentElement.click();
-}, 20000);
+    nextButton.parentElement.parentNode.click();
+}, 15000);
+
+let password = 'catdog';
+if (password.length >=6) {
+    if (password.indexOf (' ') !== -1) {
+        console.log('Password cannot include spaces.');
+    }
+    else {
+        console.log('valid password!'); // valid password
+    }
+}
+else {
+    console.log('Password is too short.');
+}
+
