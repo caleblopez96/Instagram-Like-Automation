@@ -1,5 +1,5 @@
 # Instagram-Like-Automation
-Simple Instagram 'like' bot. 
+Simple Instagram 'like' automation proccess 
 works by manipulating the DOM
 
  in order for this program to work, you need to visit instagram.
