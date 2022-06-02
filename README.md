@@ -7,8 +7,8 @@ works by manipulating the DOM
 
  use dev tools to inspect the pulled up photo. paste the code into the console. run it.
 
-// if the pulled up photo has a heart, it will click it
-// after, it will look for the arrow and click it
+// if the pulled up photo has a like button, it will click it
+// after, it will look for the 'next' arrow and click it
 // this happens once every 20 seconds
 // then the entire code repeats
 
