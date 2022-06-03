@@ -12,9 +12,5 @@ works by manipulating the DOM
 // this happens once every 20 seconds
 // then the entire code repeats
 
-Instagrams rate limit is 200 request per token per hour. 
-with that being said, the max request per minute would be 3.33
-with an interval of 1 'like' every 20 second, which fufills 
-the maximum amount of request per minute.
 
 this script allows for 180 likes per hour and remains under the rate limit of 200
