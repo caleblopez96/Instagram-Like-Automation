@@ -66,5 +66,6 @@ const automator = setInterval(() => {
 ``` 
 
 **Developer Notes:**<br>
-<i> A 20 second interval is recommended to avoid Instagrams bot detection. </i><br>
-<i> 700 likes is the maxmimum amount of likes allowed to avoid bot detection. </i>
+<i> A 20 second interval is recommended to avoid Instagrams bot detection and rate limits. </i><br>
+<i> 700 is the maximum amount of likes allowed to avoid Instagrams bot detection and rate limits. </i><br>
+<i> It is recommended to only run this code once every 24 hours to avoid Instagrams bot detection and rate limits</i>
