@@ -1,11 +1,11 @@
 Instagram Like Automation
 
-**DISCLAIMER:** 
-<i>This project is intended for personal use only, and was created as a means of enhancing my JavaScript skills. It is not intended for commercial use, and I make no guarantees or warranties regarding its functionality or compatibility with all systems or browsers.</i>
+**DISCLAIMER:** <br>
+<i>This project is intended for personal use only, and was created as a means of enhancing my JavaScript skills. It is not intended for commercial use, and I make no guarantees or warranties regarding its functionality or compatibility with all systems or browsers.</i><br>
 
-<i>By using this code, you assume all risk and responsibility for any implications or legal issues that may arise, including but not limited to any violations of the terms of service for the platform on which it is used. I am not responsible for any damages or losses that may occur as a result of the use of this code.</i>
+<i>By using this code, you assume all risk and responsibility for any implications or legal issues that may arise, including but not limited to any violations of the terms of service for the platform on which it is used. I am not responsible for any damages or losses that may occur as a result of the use of this code.</i><br>
 
-<i>Note that this project may incorporate third-party libraries or tools, which may be subject to additional terms or conditions. Any such terms or conditions will be outlined in the project documentation.</i>
+<i>Note that this project may incorporate third-party libraries or tools, which may be subject to additional terms or conditions. Any such terms or conditions will be outlined in the project documentation.</i><br>
 
 
 **Description:**
@@ -65,6 +65,6 @@ const automator = setInterval(() => {
 }}, 20000);
 ``` 
 
-**Developer Notes:**
-<i> A 20 second interval is recommended to avoid Instagrams bot detection. </i>
+**Developer Notes:**<br>
+<i> A 20 second interval is recommended to avoid Instagrams bot detection. </i><br>
 <i> 700 likes is the maxmimum amount of likes allowed to avoid bot detection. </i>
