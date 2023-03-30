@@ -20,3 +20,9 @@ Contributions and constructive criticism for this project are welcome. If you ha
 
 **Contact:**
 If you have any questions about this script, you can reach me at caleblopez96@gmail.com
+
+**Project Overview:**
+First we create a variable that keeps count of the amount of likes.
+``` // Intiliaze a variable to keep count of the amount of likes.
+let likes = 0;
+```
