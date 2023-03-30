@@ -10,7 +10,7 @@ To use this script, you will need to copy the code and paste it into your web br
 This script is built using JavaScript.
 
 **License:**
-This script is released under the Open Source MIT license.
+This script is released under the Open Source MIT License.
 
 **Acknowledgments:**
 This script was inspired by similar scripts found on GitHub and other online resources.
