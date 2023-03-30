@@ -37,8 +37,7 @@ let limit = () => {
 };
 ``` 
 
-Finally, we create a function to handle the automation process and the interval at which it runs.
-Note: A 20 second interval is recommended to avoid Instagrams bot detection.
+Finally, we create a function to handle the automation process and the interval at which it runs. <br> Note: A 20 second interval is recommended to avoid Instagrams bot detection.
 ``` 
 const automator = setInterval(() => {
     const likeButton = document.querySelector('svg[aria-label="Like"]');
