@@ -21,8 +21,37 @@ Contributions and constructive criticism for this project are welcome. If you ha
 **Contact:**
 If you have any questions about this script, you can reach me at caleblopez96@gmail.com
 
+
+
 **Project Overview:**
+
 First we create a variable that keeps count of the amount of likes.
-``` // Intiliaze a variable to keep count of the amount of likes.
+``` 
 let likes = 0;
 ```
+
+We then create a function to alert the user that they have reached their API limit. 
+``` 
+let limit = () => {
+    return alert(`You've liked ${likes} post(s). ${likes} is the maximum amount of likes per day.`);
+};
+``` 
+
+Finally, we create a function to handle the automation process and the interval at which it runs.
+``` 
+const automator = setInterval(() => {
+    const likeButton = document.querySelector('svg[aria-label="Like"]');
+    const nextButton = document.querySelector('svg[aria-label="Next"]');
+    if (likes === 700) {
+        clearInterval(automator);
+        return limit();
+    }
+    else if (likes <= 700) {
+            if (likeButton.getAttribute("aria-label") === "Like") {
+            likeButton.parentNode.parentElement.click();
+            likes++;
+            console.log(`You've liked ${likes} post(s)`); 
+        };
+            nextButton.parentElement.parentNode.click();
+}}, 20000);
+``` 
