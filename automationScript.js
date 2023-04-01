@@ -7,7 +7,8 @@ let limit = () => {
 };
 
 // the interval sets the time between likes.
-const automator = setInterval(() => {
+const automator = (interval)=>{
+    setInterval(() => {
 
     // storing necessary DOM elements into variables
     const likeButton = document.querySelector('svg[aria-label="Like"]');
@@ -30,4 +31,8 @@ const automator = setInterval(() => {
             console.log(`You've liked ${likes} post(s)`); 
         };
             nextButton.parentElement.parentNode.click();
-}}, 20000);
+    }
+}, interval);
+};
+
+automator(20000);
