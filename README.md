@@ -5,8 +5,6 @@ Instagram Like Automation
 
 <i>By using this code, you assume all risk and responsibility for any implications or legal issues that may arise, including but not limited to any violations of the terms of service for the platform on which it is used. I am not responsible for any damages or losses that may occur as a result of the use of this code.</i><br>
 
-<i>Note that this project may incorporate third-party libraries or tools, which may be subject to additional terms or conditions. Any such terms or conditions will be outlined in the project documentation.</i><br>
-
 
 **Description:**
 This is a script that automates the process of liking Instagram posts. It uses JavaScript to identify and click the "Like" button on Instagram posts, and can be set to run at regular intervals.
@@ -33,19 +31,19 @@ If you have any questions about this script, you can reach me at caleblopez96@gm
 
 **Project Overview:**
 
-First we create a variable that keeps count of the amount of likes.
+First, we create a variable `likes` that keeps count of the amount of likes.
 ``` 
 let likes = 0;
 ```
 
-We then create a function to alert the user that they have reached their API limit. 
+We then create a function `limit()` to alert the user that they have reached their API limit. 
 ``` 
 let limit = () => {
     return alert(`You've liked ${likes} post(s). ${likes} is the maximum amount of likes per day.`);
 };
 ``` 
 
-Finally, we create a function to handle the automation process and the interval at which it runs. <br> 
+Finally, we create a function `automator()` to handle the automation process and the interval at which it runs. <br> 
 
 ``` 
 const automator = setInterval(() => {
@@ -64,6 +62,9 @@ const automator = setInterval(() => {
             nextButton.parentElement.parentNode.click();
 }}, 20000);
 ``` 
+
+Copy and paste the code into your web browser's developer console, then call the function `automator();`
+
 
 **Developer Notes:**<br>
 <i> A 20 second interval is recommended to avoid Instagrams bot detection and rate limits. </i><br>
