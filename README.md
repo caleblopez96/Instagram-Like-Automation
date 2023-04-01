@@ -46,7 +46,8 @@ let limit = () => {
 Finally, we create a function `automator()` to handle the automation process and the interval at which it runs. <br> 
 
 ``` 
-const automator = setInterval(() => {
+const automator = (interval)=>{
+    setInterval(() => {
     const likeButton = document.querySelector('svg[aria-label="Like"]');
     const nextButton = document.querySelector('svg[aria-label="Next"]');
     if (likes === 700) {
@@ -60,10 +61,13 @@ const automator = setInterval(() => {
             console.log(`You've liked ${likes} post(s)`); 
         };
             nextButton.parentElement.parentNode.click();
-}}, 20000);
+    }
+}, interval);
+};
 ``` 
 
-Copy and paste the code into your web browser's developer console, then call the function `automator();`
+Copy and paste the code into your web browser's developer console, then call the function `automator();` with the desired length of time between likes as an argument to the function.
+```automator(20000);``` will set the functions interval to 20 seconds.
 
 
 **Developer Notes:**<br>
