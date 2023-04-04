@@ -1,5 +1,6 @@
 // Intiliaze a variable to keep count of the amount of likes.
 let likes = 0;
+const MAX_LIKES = 700;
 
 // function to alert user they have hit the limit.
 let limit = () => {
@@ -15,7 +16,7 @@ const automator = (interval)=>{
     const nextButton = document.querySelector('svg[aria-label="Next"]');
 
     // stoping interval at API limit
-    if (likes === 700) {
+    if (likes === MAX_LIKES) {
         clearInterval(automator);
         return limit();
     }
@@ -24,7 +25,7 @@ const automator = (interval)=>{
     // click like button. ->
     // increase like counter by 1. -> 
     // log to console current amount of likes.
-    else if (likes <= 700) {
+    else if (likes <= MAX_LIKES) {
             if (likeButton.getAttribute("aria-label") === "Like") {
             likeButton.parentNode.parentElement.click();
             likes++;
