@@ -32,13 +32,13 @@ If you have any questions about this script, you can reach me at caleblopez96@gm
 **Project Overview:**
 
 First, we create variables to store `likes` and `MAX_VALUE` that keeps count of the amount of likes.
-``` 
+``` js
 let likes = 0;
 const MAX_LIKES = 700;
 ```
 
 We then create a function `limit()` to alert the user that they have reached their API limit. 
-``` 
+``` js
 let limit = () => {
     return alert(`You've liked ${likes} post(s). ${likes} is the maximum amount of likes per day.`);
 };
@@ -46,7 +46,7 @@ let limit = () => {
 
 Finally, we create a function `automator()` to handle the automation process and the interval at which it runs. <br> 
 
-``` 
+``` js
 const automator = (interval)=>{
     setInterval(() => {
     const likeButton = document.querySelector('svg[aria-label="Like"]');
