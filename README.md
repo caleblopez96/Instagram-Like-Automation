@@ -31,7 +31,7 @@ If you have any questions about this script, you can reach me at caleblopez96@gm
 
 **Project Overview:**
 
-First, we create variables to store `likes` and `MAX_VALUE` that keeps count of the amount of likes.
+First, we create variables to store `likes` and `MAX_VALUE` that keeps count of the amount of likes as well as the maximum amount of likes.
 ``` js
 let likes = 0;
 const MAX_LIKES = 700;
