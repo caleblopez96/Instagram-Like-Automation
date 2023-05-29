@@ -11,30 +11,29 @@ let limit = () => {
 // the interval sets the time between likes.
 const automator = (interval)=>{
     setInterval(() => {
-
     // storing necessary DOM elements into variables.
     const likeButton = document.querySelector('svg[aria-label="Like"]');
     const nextButton = document.querySelector('svg[aria-label="Next"]');
-
-    // stoping interval at API limit
+    // clearing interval at API limit
     if (likes === MAX_LIKES) {
         clearInterval(automator);
         return limit();
     }
-
-    // if "Like" button is present on page. ->
-    // click like button. ->
-    // increase like counter by 1. -> 
-    // log to console current amount of likes.
     else if (likes <= MAX_LIKES) {
+            // if likeButton is present on page
             if (likeButton.getAttribute("aria-label") === "Like") {
+            // click like button
             likeButton.parentNode.parentElement.click();
+            // increase likes count
             likes++;
             console.log(`You've liked ${likes} post(s)`); 
         };
+            // click next button
             nextButton.parentElement.parentNode.click();
     }
+    // time in milliseconds
 }, interval);
 };
 
+// calling the function with a 20 second interval
 automator(20000);
