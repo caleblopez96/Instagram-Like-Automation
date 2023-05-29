@@ -35,12 +35,13 @@ First, we create variables to store `likes` and `MAX_VALUE` that keeps count of 
 ``` js
 let likes = 0;
 const MAX_LIKES = 700;
+let message = `You've liked ${likes} post(s). ${likes} is the maximum amount of likes per day.`;
 ```
 
 We then create a function `limit()` to alert the user that they have reached their API limit. 
 ``` js
 let limit = () => {
-    return alert(`You've liked ${likes} post(s). ${likes} is the maximum amount of likes per day.`);
+    return alert(message);
 };
 ``` 
 
