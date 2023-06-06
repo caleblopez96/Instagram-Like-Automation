@@ -35,23 +35,3 @@ const automator = (interval) => {
 
 // calling the function with a 20 second interval
 automator(20000);
-
-
-
-/* 
-
-https://www.instagram.com/explore/tags/nameOfHashTagGoesHere/
-
-*/
-
-// create a chrome extension that list the steps
-// has a button
-// button when clicked runs automator(20000);
-
-
-// step 1: Log into instagram.
-// step 2: Search for a hashtag.
-// step 3: Navigate to the "Most recent post" section.
-// step 4: Click on the any photo.
-// step 5: Click Automate!
-
